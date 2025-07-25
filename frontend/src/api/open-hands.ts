@@ -531,6 +531,10 @@ class OpenHands {
 
     return data;
   }
+
+  static async resetSettings(): Promise<void> {
+    await openHands.post("/api/settings/reset");
+  }
 }
 
 export default OpenHands;
